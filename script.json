@@ -1,10 +1,11 @@
 {
     "BOT": "Hi there!\nI’m the personal bot of Elisabeth!\nWhere do you want to start?",
     "GET STARTED": "Hi there!\nI’m the personal bot of Elisabeth!\nSay Hello to start?",
-    "HELLO": "Hey, I'm so glad you set ElisaBot up! What do you want to know? %[Job](postback:job)",
-    "JOB": "Ok, so Elisabeth is an entrepreneur. Anything else? %[Yes](postback:yes)",
+    "HELLO": "Hey, I'm so glad you set ElisaBot up! What do you want to know about Elisabeth? Job, Education... %[Job](postback:startwithjob)",
+    "JOB": "Ok, so Elisabeth is an entrepreneur. Anything else?",
     "TELL HER": "Let's tweet @emouchy so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
     "YES": "Ok, let's see. She lives 6 years in San Francisco. How's that? %[Don't care](postback:mean) %[Interesting](postback:interesting)",
+    "NO": "Ok, we don't need to be too talkative",
     "I LOVE YOU": "Awh, shucks! I love you too!",
     "CURIOUS": "So you're curious?",
     "CONNECT ME": "",
