@@ -12,8 +12,9 @@
     "WHATS UP": "Pretty good, how are you?",
     "I LOVE YOU": "Awh, shucks! I love you too!",
     "CURIOUS": "So you're curious?",
-    "** LOVE **": "Cute, I love you too!",
-    "VERSION": "I am v1.6",
+    "LOVE": "Cute, I love you too!",
+    "VERSION": "I am v1.7",
+    "HELP": "Here are some ideas %[Job] %[Education] %[SF] %[I love you]",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, EstherBot is back."
 }
