@@ -73,18 +73,6 @@ if (process.env.SERVICE_URL) {
     const smoochCore = new SmoochCore({
         jwt
     });
-
-    // ZAb
-smooch.integrations.create('55c8d9758590aa1900b9b9f6', {
-    type: 'messenger',
-    pageAccessToken: 'EAAIeU6Ab7ucBAALR2WoYX8Ww36Ut50JIPr4OAoHLrL0jiPcGZBbS2PRmMPpXZClYfdds1RmYfZAABUyPoMoA71Acwu3oigsawAUjPk9I9YW2cUrOQ7KRhWPGOwOA4yrYlaDn1jcl6ZC5MOczaeP8QiU5hb61oZBj64ZCQNGZBjJFwZDZD',
-    appId: '596294470725351',
-    appSecret: '91a9a4f03051f60401c9e0b8df884436'
-}).then((response) => {
-    // async code
-});
-//End ZAb
-
     smoochCore.webhooks.list()
         .then((res) => {
             if (!res.webhooks.some((w) => w.target === target)) {
@@ -145,3 +133,6 @@ var server = app.listen(process.env.PORT || 8000, function() {
 
     console.log('Smooch Bot listening at http://%s:%s', host, port);
 });
+
+var Smooch = require('smooch');
+Smooch.init({ appId: '5aeb44f9994b8b0022a1ab37' });
