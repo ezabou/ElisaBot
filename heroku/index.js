@@ -133,6 +133,3 @@ var server = app.listen(process.env.PORT || 8000, function() {
 
     console.log('Smooch Bot listening at http://%s:%s', host, port);
 });
-
-var Smooch = require('smooch');
-Smooch.init({ appId: '5aeb44f9994b8b0022a1ab37' });
