@@ -6,7 +6,7 @@
     "TELL HER": "Let's tweet @emouchy so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
     "YES": "Ok, let's see. She lives 6 years in San Francisco. How's that? %[Don't care](postback:mean) %[Interesting](postback:interesting)",
     "NO": "Ok, we don't need to be too talkative",
-    "WHAT'S UP?": "Pretty good, how are you?"
+    "WHAT'S UP?": "Pretty good, how are you?",
     "I LOVE YOU": "Awh, shucks! I love you too!",
     "CURIOUS": "So you're curious?",
     "CONNECT ME": "",
