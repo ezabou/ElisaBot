@@ -38,33 +38,11 @@ const store = new SmoochApiStore({
 });
 const lock = new MemoryLock();
 
-function createWebhook(smoochCore, target) {
-    return smoochCore.webhooks.create({
-            target,
-            triggers: ['message:appUser']
-        })
-        .then((res) => {
-            console.log('Smooch webhook created at target', res.webhook.target);
-            return smoochCore.webhooks.create({
-                        target,
-                        triggers: ['postback']
-                    })
-                    .then((res) => {
-                        console.log('Smooch postback webhook created at target', res.webhook.target);
-                    })
-                    .catch((err) => {
-                        console.error('Error creating Smooch webhook:', err);
-                        console.error(err.stack);
-                    });
-            }            
-        )
-        .catch((err) => {
-            console.error('Error creating Smooch webhook:', err);
-            console.error(err.stack);
-        });
-}
-
 // Zab
+const express = require('express')
+const bodyParser = require('body-parser')
+const request = require('request')
+const app = express()
 
 app.set('port', (process.env.PORT || 5000))
 
@@ -93,6 +71,34 @@ app.listen(app.get('port'), function() {
 })
 
 // End Zab
+
+function createWebhook(smoochCore, target) {
+    return smoochCore.webhooks.create({
+            target,
+            triggers: ['message:appUser']
+        })
+        .then((res) => {
+            console.log('Smooch webhook created at target', res.webhook.target);
+            return smoochCore.webhooks.create({
+                        target,
+                        triggers: ['postback']
+                    })
+                    .then((res) => {
+                        console.log('Smooch postback webhook created at target', res.webhook.target);
+                    })
+                    .catch((err) => {
+                        console.error('Error creating Smooch webhook:', err);
+                        console.error(err.stack);
+                    });
+            }            
+        )
+        .catch((err) => {
+            console.error('Error creating Smooch webhook:', err);
+            console.error(err.stack);
+        });
+}
+
+
 
 // Create a webhook if one doesn't already exist
 if (process.env.SERVICE_URL) {
