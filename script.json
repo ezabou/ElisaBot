@@ -1,7 +1,7 @@
 {
     "BOT": "Hi there!\nI’m the personal bot of Elisabeth!\nWhere do you want to start?",
     "GET STARTED": "Hi there!\nI’m the personal bot of Elisabeth!\nSay Hello to start?",
-    "HELLO": "Hey, I'm so glad you set ElisaBot up! What do you want to know about Elisabeth? Job, Education... %[Help](postback:startwithhelp)",
+    "HELLO": "Hey\nI'm so glad you set ElisaBot up!\nWhat do you want to know about Elisabeth? Job, Education... %[Help](postback:startwithhelp)",
     "JOB": "Ok, so Elisabeth is an entrepreneur. Anything else?",
     "EDUCATION":"Elisabeth has graduated in engineering and business. Cool, no?",
     "SF": "She lives for 6 years in SF, it was damn cool!",
@@ -13,7 +13,7 @@
     "I LOVE YOU": "Awh, shucks! I love you too!",
     "CURIOUS": "So you're curious?",
     "LOVE": "Cute, I love you too!",
-    "VERSION": "I am v1.8",
+    "VERSION": "I am v1.9",
     "HELP": "Here are some ideas %[Job](postback:job) %[Education](postback:education) %[SF](postback:SF) %[I love you](postback:Love?)",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, EstherBot is back."
